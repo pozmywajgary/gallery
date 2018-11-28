@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/pozmywajgary/gallery/issues"
   },
-  "homepage": "https://github.com/pozmywajgary/gallery#readme"
+  "homepage": "https://github.com/pozmywajgary/gallery#readme",
+  "dependencies": {
+    "vanilla-javascript": "^1.0.1"
+  }
 }
