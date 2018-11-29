@@ -4,15 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "moje-pierwsze-polecenie": "echo ciasteczko",
+    "start": "http-server"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/pozmywajgary/gallery.git"
   },
-  "scripts":{"moje-pierwsze-polecenie":"echo ciasteczko",
-    "start":"http-server"},
-  
   "keywords": [],
   "author": "",
   "license": "ISC",
