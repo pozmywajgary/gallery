@@ -8,7 +8,7 @@ function setup() {
         zoom.render(image);
     })
 
-    gallery.PhotosService.fetchPhotos()
+    gallery.PhotosService.fetchPhotosAsync()
         .then(({photos}) => {
             //debugger;
             thumbList.render(photos);

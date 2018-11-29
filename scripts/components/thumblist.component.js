@@ -22,10 +22,6 @@
                     this.trigger('click:thumb', { image });
                 })
 
-
-                //thumb.addEventListener('click'), () => {
-                //zoom.display(image);
-                //})
             });
         }
 
