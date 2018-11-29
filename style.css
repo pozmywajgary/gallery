@@ -1,0 +1,14 @@
+#conteiner p{
+    background:#ff0000;
+    width: 60px;
+    height: 60px;
+    display: block;
+    font-size: 1.5em;
+    border-radius: 50%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    margin:10px;
+    box-shadow: 2px 2px #000;
+}
