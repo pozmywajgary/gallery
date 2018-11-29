@@ -1,12 +1,12 @@
-(function(){
+(function () {
 
     //IIFE
     class Thumb {
-        constructor(url){
+        constructor(url) {
             this.url = url;
         }
-    
-        render(){
+
+        render() {
             const $el = document.createElement('img');
             const $app = document.querySelector('#app');
             $el.setAttribute('src', this.url);
@@ -15,5 +15,5 @@
     }
     window.gallery = window.gallery || {};
     window.gallery.Thumb = Thumb;
-    
+
 })();
