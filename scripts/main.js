@@ -1,18 +1,18 @@
 
 function setup() {
-
     const zoom = new gallery.Zoom();
-    new gallery.ThumbList();
+    const thumbList = new gallery.ThumbList();
 
 
-    gallery.db.photos.forEach(({ thumb, image }) => {
-        const photo = new gallery.Thumb(thumb);
-        photo.render();
+    thumbList.on('click:thumb', ({ image }) => {
+        zoom.render(image);
+    })
 
-        //thumb.addEventListener('click'), () => {
-        zoom.display(image);
-        //})
-    });
+    gallery.PhotosService.fetchPhotos()
+        .then(({photos}) => {
+            //debugger;
+            thumbList.render(photos);
+    })
 
 }
 
