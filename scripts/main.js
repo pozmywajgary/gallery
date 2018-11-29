@@ -4,10 +4,10 @@ function setup() {
     const zoom = new gallery.Zoom();
 
     gallery.db.photos.forEach(({thumb, image}) => {
-        const photo = new gallery.Photo(thumb);
+        const photo = new gallery.Thumb(thumb);
         photo.render();
 
-        //photo.addEventListener('click'), () => {
+        //thumb.addEventListener('click'), () => {
             zoom.display(image);
         //})
     });
